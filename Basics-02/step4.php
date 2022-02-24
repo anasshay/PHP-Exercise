@@ -1,12 +1,12 @@
 <?php
 
-$number = 407;
+$number = 153;
 $total = 0;
 
 $x = $number;
 while ($x != 0) {
     $unit = $x % 10;
-    $total = $total + $unit * $unit * $unit;
+    $total = $total + $unit ** 3;
     $x = $x / 10;
 }
 if ($number == $total) {
