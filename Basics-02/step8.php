@@ -3,11 +3,13 @@
 function powerOfTwo($n)
 {
     if($n >= 0){
-        if($n % 2 == 0){
-            return $n . " is power of 2";
+        for ($i=0; $i <$n ; $i++) { 
+            if (2**$i == $n){
+                return "true";
+            }
         }
     }
 }
 
-echo powerOfTwo(125)
+echo powerOfTwo(62)
 ?>
