@@ -1,9 +1,13 @@
 <?php 
-$text = "one two three four three five six three";
+$text = "one two three four three, five six three.";
 $word = "three";
 
 function isPresent($text, $word){
-    $arrayText = explode(" ", $text);
+    $arrayText = preg_split('/[.|,| ]/', $text);
+    // foreach ($arrayText as $key => $value) {
+    //     echo $value . "\n";
+    // }
+    print_r($arrayText);
     $count = 0;
     $x=0;
 
@@ -15,9 +19,6 @@ function isPresent($text, $word){
     }
     return $count;
 };
-// $arrayText = explode(" ", $text);
-// echo in_array($word,$arrayText)
-
 echo isPresent($text, $word);
 
 ?> 

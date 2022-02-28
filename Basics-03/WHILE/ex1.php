@@ -11,5 +11,5 @@ function stars($n){
     }
 }
 
-stars(2)
+stars(5)
 ?>
